@@ -1,6 +1,6 @@
 export class Basket {
 
-    HTML_shopping = document.getElementById('shopping')
+    shoppingProduct = document.querySelector('.shopping-product')
 
     HTML_header = document.getElementById('header')
 
@@ -40,11 +40,11 @@ export class Basket {
         let list = ''
         this.basketProducts.forEach(({ name, price, src }) => {
             list += `
-            <li  >
+            <li class = "basket-element" >
             <span> ${name}</span>
             <img src = "${src}" />
             <span"> ${price}</span>
-            <button"> delete </button>
+            <button> delete </button>
             </li>
             `
         })
@@ -54,7 +54,7 @@ export class Basket {
     </ul>
     `  
         
-         this.HTML_shopping.innerHTML=html
+         this.shoppingProduct.innerHTML=html
         // div.appendChild(this.HTML_shopping)
         
     }

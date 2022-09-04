@@ -1,7 +1,7 @@
 const HTML_products = document.getElementById('products')
 const HTML_shopping = document.getElementById('shopping')
 const productsContainer = document.querySelector('.products-container')
-let clone 
+
 export class ProductScreen {
     productsBasketBtn = document.querySelectorAll('.products_element_btn')
     
@@ -26,14 +26,6 @@ export class ProductScreen {
         `
         HTML_products.innerHTML = html
         
-        // this.productsBasketBtn.forEach(item => {
-        //     item.addEventListener('click', () => {
-        //         clone = productsContainer.cloneNode(true)
-        //         console.log(clone);
-        //         HTML_shopping.appendChild(clone)               
-        //     })
-        // })
-
     }
 }
 
